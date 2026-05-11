@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <!-- bootstrap icon  -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+  />
+  <!-- bootstrap css file -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <!-- main style -->
+  <link rel="stylesheet" href="css/style.css" />
+  <body>
+    <div class="d-flex">
+      <div class="side-pane-container">
+        <li class="title">Solutions</li>
+        <ul class="menu-list">
+          <li class="item">
+            <a class="selected" data-item="all">All Solutions</a>
+          </li>
+          <li class="item has-sub">
+            <a id="sub-menu-title ">
+              <div class="d-flex align-items-center justify-content-between">
+                Enterprise Application
+                <img
+                  class="sub-menu-arrow"
+                  src="assets/icons/chevron-down-black.svg"
+                  alt=""
+                />
+              </div>
+            </a>
+            <ul class="sub-menu hidden" id="sub-menu">
+              <li class="sub-item">
+                <a data-item="item-1">sub menu content</a>
+              </li>
+              <li class="sub-item">
+                <a data-item="item-2">sub menu content</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="item"><a data-item="item-3">Emerging Technology</a></li>
+          <li class="item"><a data-item="item-4">Data and Analytics</a></li>
+          <li class="item">
+            <a class="" data-item="item-5"
+              >Mobility & Customer Experience (CX) </a
+            >
+          </li>
+          <li class="item">
+            <a data-item="item-6">Infrastructure, ITOps & Observability</a>
+          </li>
+          <li class="item"><a data-item="item-7">Cloud Solutions</a></li>
+          <li class="item"><a data-item="item-8">Cybersecurity</a></li>
+          <li class="item"><a data-item="item-9">Pre-built Solutions</a></li>
+        </ul>
+      </div>
+
+      <!-- content of the side pane items -->
+      <main class="side-pane-content">
+        <div class="card" id="item-1">enterprise 1 content</div>
+        <div class="card" id="item-2">enterprise 2 content</div>
+        <div class="card" id="item-3">emerging content</div>
+        <div class="card" id="item-4">data content</div>
+        <div class="card" id="item-5">mobility content</div>
+        <div class="card" id="item-6">infrastructure content</div>
+        <div class="card" id="item-7">cloud content</div>
+        <div class="card" id="item-8">Cybersecurity content</div>
+        <div class="card" id="item-9">Pre-built content</div>
+      </main>
+    </div>
+    <!-- bootstrap js file -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- main js file -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

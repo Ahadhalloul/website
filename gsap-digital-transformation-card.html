@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>GSAP Cards Full + Gap + Scroll Overlap + Container Margin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- bootstrap icon  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <!-- bootstrap css file -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- main style -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- FOR TESTING REMOVE IT LATER -->
+    <div style="height: 300px; background-color: rgb(207, 131, 131)">
+      top content
+    </div>
+    <!-- -STRAT CARDS SCROLL SECTION---  -->
+    <div class="digital-transformation cards-container container">
+      <div class="card shadow">
+        <div class="shape">
+          <img src="assets/images/Shapes.png" alt="" />
+        </div>
+        <div class="img-section">
+          <div class="img">
+            <img
+              src="assets/images/f4298aa31492b79b5ddf02152933323f3a957006.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="content-container">
+          <div class="top-head d-flex justify-content-between">
+            <div class="d-flex gap-2 text-secondary">
+              01 <img src="assets/icons/arrow-right-green.svg" alt="" />
+            </div>
+            <p>Banking Financial Services & Insurance (BFSI) Solutions</p>
+          </div>
+          <div class="content">
+            <div>
+              <h3 class="sub-head text-secondary">Industries</h3>
+              <h1>Cross-Industry Solutions</h1>
+            </div>
+            <p>Innovative Solutions for Diverse Business Needs </p>
+            <a href="#" class="btn btn-secondary text-primary"
+              >Discover Your Solution</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="card shadow">
+        <div class="shape">
+          <img src="assets/images/Shapes.png" alt="" />
+        </div>
+        <div class="img-section">
+          <div class="img">
+            <img
+              src="assets/images/f4298aa31492b79b5ddf02152933323f3a957006.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="content-container">
+          <div class="top-head d-flex justify-content-between">
+            <div class="d-flex gap-2 text-secondary">
+              02 <img src="assets/icons/arrow-right-green.svg" alt="" />
+            </div>
+            <p>Banking Financial Services & Insurance (BFSI) Solutions</p>
+          </div>
+          <div class="content">
+            <div>
+              <h3 class="sub-head text-secondary">Industries</h3>
+              <h1>Cross-Industry Solutions</h1>
+            </div>
+            <p>Innovative Solutions for Diverse Business Needs </p>
+            <a href="#" class="btn btn-secondary text-primary"
+              >Discover Your Solution</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="card shadow">
+        <div class="shape">
+          <img src="assets/images/Shapes.png" alt="" />
+        </div>
+        <div class="img-section">
+          <div class="img">
+            <img
+              src="assets/images/4da0523a15f34d2da8a8b645e19b420f18d9904fff.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="content-container">
+          <div class="top-head d-flex justify-content-between">
+            <div class="d-flex gap-2 text-secondary">
+              03 <img src="assets/icons/arrow-right-green.svg" alt="" />
+            </div>
+            <p>Banking Financial Services & Insurance (BFSI) Solutions</p>
+          </div>
+          <div class="content">
+            <div>
+              <h3 class="sub-head text-secondary">Industries</h3>
+              <h1>Cross-Industry Solutions</h1>
+            </div>
+            <p>Innovative Solutions for Diverse Business Needs </p>
+            <a href="#" class="btn btn-secondary text-primary"
+              >Discover Your Solution</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FOR TESTING REMOVE IT LATER -->
+    <div style="height: 800px; background-color: rgb(145, 83, 83)">
+      bottom content
+    </div>
+
+    <!-- bootstrap js file -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- main js file -->
+    <script src="js/main.js"></script>
+    <!-- GSAP LIBRARY & SCROLL TRIGGER PLUGIN  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- GSAP SCRIPT  -->
+    <script>
+      document.addEventListener("DOMContentLoaded", (event) => {
+        gsap.registerPlugin(ScrollTrigger);
+
+        const spacer = 40;
+        const cards = gsap.utils.toArray(".digital-transformation .card");
+        const digitalTransformationContainer = document.querySelector(
+          ".digital-transformation.cards-container"
+        );
+
+        cards.forEach((card, i) => {
+          const isLastCard = i === cards.length - 1;
+
+          gsap.to(card, {
+            scrollTrigger: {
+              trigger: card,
+              start: `top top`,
+              scrub: 2,
+              // markers: true,
+            },
+            ease: "none",
+            autoAlpha: () => (isLastCard ? 1 : 0.6), // condition for last card
+            scale: () => (isLastCard ? 1 : 0.9), // condition for last card
+          });
+
+          ScrollTrigger.create({
+            trigger: card,
+            start: "-=30px top",
+            endTrigger: digitalTransformationContainer,
+            end: `bottom top+=${550 + cards.length * spacer}`,
+            pin: true,
+            pinSpacing: false,
+            // markers: true,
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

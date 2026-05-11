@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- bootstrap icon  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <!-- bootstrap css file -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- main style -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- start small screen nav menu  -->
+    <div class="small-menu offcanvas offcanvas-start" id="menu-offcanvas">
+      <div class="offcanvas-header">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="logo">
+          <img src="assets/logos/ejada-logo.png" alt="" />
+        </div>
+        <ul class="mb-0 nav-items d-flex flex-column gap-2">
+          <li class="item">
+            <a class="d-flex gap-1 align-items-center" href="#"
+              >What We Do<img src="assets/icons/chevron-down-blue.svg" alt=""
+            /></a>
+          </li>
+          <li class="item">
+            <a href="#">Who We Are</a>
+          </li>
+          <li class="item">
+            <a href="#">Knowledge Hub</a>
+          </li>
+          <li class="item">
+            <a href="#">Join Our Team</a>
+          </li>
+          <li class="item">
+            <a href="#">Blog</a>
+          </li>
+        </ul>
+        <div class="d-flex flex-column gap-4">
+          <div class="search pointer">
+            <img src="assets/icons/search.svg" alt="search icon" />
+          </div>
+          <div class="nav-btns d-flex flex-column align-items-start gap-3">
+            <a
+              class="btn btn-secondary ehub-text d-flex align-items-center gap-1"
+            >
+              <div class="e"></div>
+              hub
+            </a>
+            <b class="btn btn-primary"> Contact Us </b>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end small screen nav menu  -->
+    <!--------------- start header and hero  ---------->
+    <div class="home-page-hero">
+      <!--------------- start header  ------------------------>
+      <!-- add "transparent-bg" for transparent header inside hero-->
+      <header class="transparent-bg">
+        <!-- -------------- start Up Nav ------------- -->
+        <!-- add "d-none" to hide the top nav  -->
+        <nav class="top">
+          <div
+            class="container up-nav py-2 d-flex align-items-center justify-content-between"
+          >
+            <div class="d-flex align-items-center gap-3">
+              <a class="ejada-link" href="#">ejada website</a>
+              <a
+                class="investor-link d-flex align-items-center gap-1 text-neutrals-n4"
+                href="#"
+                >Investors Relations
+                <img src="assets/icons/external-link.svg" alt=""
+              /></a>
+            </div>
+
+            <ul
+              class="d-none d-lg-flex extra-nav d-flex align-items-center gap-2"
+            >
+              <li class="d-flex">
+                <a class="d-flex align-items-center gap-2" href="">
+                  <img src="assets/icons/Vector.svg" alt="" />Accessibility</a
+                >
+              </li>
+              <!--- Language Switch --->
+              <li class="language-dropdown dropdown">
+                <button
+                  id="language-code"
+                  class="dropdown-toggle btn pe-0 border-0"
+                  data-bs-toggle="dropdown"
+                  data-bs-target="#language-options"
+                >
+                  <img
+                    id="language-flag"
+                    src="assets/icons/us.svg"
+                    alt="Flag"
+                  />
+                  EN
+                  <img src="assets/icons/chevron-down-blue.svg" alt="" />
+                </button>
+                <ul
+                  id="language-options"
+                  class="language-options dropdown-menu"
+                >
+                  <li class="dropdown-item">
+                    <img src="assets/icons/us.svg" alt="US" /> EN
+                  </li>
+                  <li class="dropdown-item">
+                    <img src="assets/icons/saudi.png" alt="Saudi" /> AR
+                  </li>
+                </ul>
+              </li>
+              <!-- -------------  -->
+
+              <img src="assets/icons/Line-blue.svg" alt="" />
+              <li>
+                <a class="d-flex align-items-center gap-1" href=""
+                  >Bawabetna<img
+                    src="assets/icons/external-link-blue.svg"
+                    alt=""
+                /></a>
+              </li>
+            </ul>
+
+            <!--  start small screen top nav   -->
+            <div class="top-nav-dropdown dropdown d-lg-none">
+              <button
+                id="top-nav-btn"
+                class="dropdown-toggle btn pe-0 border-0"
+                data-bs-toggle="dropdown"
+                data-bs-target="#top-nav"
+                data-bs-auto-close="outside"
+              >
+                <div class="dots-more pointer d-lg-none">
+                  <img src="assets/icons/dots-vertical.svg" alt="" />
+                </div>
+              </button>
+              <ul id="top-nav" class="dropdown-menu top-nav flex-column gap-2">
+                <li class="d-flex">
+                  <a class="d-flex align-items-center gap-2" href="">
+                    <img src="assets/icons/Vector.svg" alt="" />Accessibility</a
+                  >
+                </li>
+
+                <li class="language-dropdown dropdown">
+                  <button
+                    id="language-code"
+                    class="dropdown-toggle btn pe-0 border-0"
+                    data-bs-toggle="dropdown"
+                    data-bs-target="#language-options"
+                  >
+                    <img
+                      id="language-flag"
+                      src="assets/icons/us.svg"
+                      alt="Flag"
+                    />
+                    EN
+                    <img src="assets/icons/chevron-down-blue.svg" alt="" />
+                  </button>
+                  <ul
+                    id="language-options"
+                    class="language-options dropdown-menu"
+                  >
+                    <li class="dropdown-item">
+                      <img src="assets/icons/us.svg" alt="US" /> EN
+                    </li>
+                    <li class="dropdown-item">
+                      <img src="assets/icons/saudi.png" alt="Saudi" /> AR
+                    </li>
+                  </ul>
+                </li>
+                <!-- -------------  -->
+                <li>
+                  <a class="d-flex align-items-center gap-1" href=""
+                    >Bawabetna<img
+                      src="assets/icons/external-link-blue.svg"
+                      alt=""
+                  /></a>
+                </li>
+              </ul>
+            </div>
+            <!--  end small screen top nav toggle  -->
+            <!-- -------------------------  -->
+          </div>
+        </nav>
+
+        <!-- ---------------- start Second/Main Nav--------------- -->
+        <div
+          class="container py-4 main-nav d-flex align-items-center justify-content-between"
+        >
+          <!-- toggle small screen side menu icon -->
+          <button
+            class="btn menu-icon d-lg-none z-3"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#menu-offcanvas"
+          >
+            <i class="bi bi-list"></i>
+          </button>
+          <!-- ----------  -->
+          <div class="logo">
+            <img src="assets/logos/ejada-logo.png" alt="" />
+          </div>
+          <ul
+            class="mb-0 nav-items d-flex align-items-center gap-2 d-none d-lg-flex"
+          >
+            <li class="item">
+              <a class="d-flex gap-1 align-items-center" href="#"
+                >What We Do<img src="assets/icons/chevron-down-blue.svg" alt=""
+              /></a>
+            </li>
+            <li class="item">
+              <a class="d-flex gap-1 align-items-center" href="#"
+                >Who We Are<img src="assets/icons/chevron-down-blue.svg" alt=""
+              /></a>
+            </li>
+            <li class="item">
+              <a href="#">Knowledge Hub</a>
+            </li>
+            <li class="item">
+              <a href="#">Join Our Team</a>
+            </li>
+            <li class="item">
+              <a href="#">Blog</a>
+            </li>
+          </ul>
+          <div class="d-flex gap-4 align-items-center">
+            <div class="search pointer">
+              <img src="assets/icons/search.svg" alt="search icon" />
+            </div>
+            <div
+              class="d-none d-lg-flex nav-btns d-flex align-items-center gap-3"
+            >
+              <a
+                class="btn btn-secondary ehub-text d-flex align-items-center gap-1"
+              >
+                <div class="e"></div>
+                hub
+              </a>
+              <b class="btn btn-primary"> Contact Us </b>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!--------------- end header  ------------------------>
+      <!----------------------start hero content  ------------------------>
+      <!-- hero video  -->
+      <div class="hero-video">
+        <video
+          src="assets/video/Hero_Video2_720p.mp4"
+          autoplay
+          loop
+          muted
+        ></video>
+        <!-- <img src="assets/images/home-hero-bg.png" alt="" /> -->
+      </div>
+      <div class="overlay"></div>
+      <!-- shapes  -->
+      <div class="shape-1">
+        <img src="assets/images/home-shape-1.png" alt="" />
+      </div>
+      <div class="shape-2">
+        <img src="assets/images/home-shape-2.png" alt="" />
+      </div>
+      <div class="container hero-content">
+        <div
+          class="d-flex flex-column align-items-start w-75 align-items-start mx-auto my-5"
+        >
+          <div class="hero-title my-4">
+            <h1>experience next <span>product.</span></h1>
+          </div>
+          <p class="hero-text">
+            ejada is a leading IT provider in MENA, enhancing competitiveness
+            with innovative solutions.
+          </p>
+          <button class="btn btn-primary mt-3">Get a Free Consultation</button>
+        </div>
+      </div>
+      <!----------------------start hero content  ------------------------>
+    </div>
+    <!--------------- end header and hero  ---------->
+
+    <!-- ------------------ Start footer ---------------------- -->
+    <footer class="">
+      <div class="container footer-container">
+        <div
+          class="footer-content pt-5 pb-3 d-flex align-items-start justify-content-between gap-5"
+        >
+          <div class="logo-social-section d-flex flex-column gap-5">
+            <div class="footer-logo">
+              <img
+                src="assets/logos/ejada-logo.png"
+                alt=""
+                class="footer-logo-img"
+              />
+            </div>
+            <div class="social-media-icons d-flex align-items-center gap-2">
+              <img
+                src="assets/icons/square-facebook-brands-solid 1.svg"
+                alt=""
+              />
+              <img src="assets/icons/linkedin-brands-solid.svg" alt="" />
+              <img
+                src="assets/icons/square-instagram-brands-solid 1.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <p class="">
+            Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do
+            eiusmod.Lorem ipsum dolor sit amet, consec tetur adipiscing elit,
+            sed do eiusmod.
+          </p>
+
+          <div class="footer-links d-flex align-items-center gap-4">
+            <div class="item-link d-flex align-items-center gap-2">
+              <a>
+                Investors Relationships
+                <img src="assets/icons/external-link.svg" alt="" />
+              </a>
+            </div>
+            <div class="item-link d-flex align-items-center gap-2">
+              <a>
+                Bawabtna
+                <img src="assets/icons/external-link.svg" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="pt-4 footer-bottom d-flex justify-content-between">
+          <p class="copy-right">© 2025 EJADA SYSTEMS All rights reserved.</p>
+          <ul class="d-flex gap-4">
+            <li><a href="#">Anti-Bribery and Corruption Policy </a></li>
+            <li><a href="#"> Whistleblowing Policy</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Secure Usage Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- ------------------ End footer ------------------------ -->
+    <!-- bootstrap js file -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- main js file -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

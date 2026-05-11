@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- bootstrap icon  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <!-- bootstrap css file -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- main style -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!------------ Solution CARDS  -------------->
+    <div class="card-container solution-cards">
+      <!-- big screen cards  -->
+      <div class="card d-flex flex-column justify-content-between">
+        <div class="text-bg-layer d-none">1</div>
+        <div class="d-flex flex-column gap-3">
+          <div class="icon">
+            <img src="assets/icons/Application Management.svg" alt="" />
+          </div>
+          <h4 class="title">Solution Name</h4>
+          <p class="hidden">
+            Keep your Applications Running like Clockwork. From cross-industry
+            to real estate, we drive growth with tailored IT solutions. 
+          </p>
+        </div>
+        <a href="#" class="discover-link d-flex align-items-center">
+          <p class="hidden mb-0">Discover Your Solution</p>
+          <img class="arrow" src="assets/icons/chevron-right-dark.svg" alt="" />
+        </a>
+      </div>
+      <!-- mobile screen cards  -->
+      <div class="card sm-card d-flex flex-column justify-content-between">
+        <div class="text-bg-layer">1</div>
+        <div class="d-flex flex-column gap-3">
+          <div class="icon-bg">
+            <img src="assets/icons/Icon1.svg" alt="" />
+          </div>
+          <h4 class="title">Solution Name</h4>
+          <p class="hidden">
+            Keep your Applications Running like Clockwork. From cross-industry
+            to real estate, we drive growth with tailored IT solutions. 
+          </p>
+        </div>
+        <a href="#" class="discover-link">
+          <p class="hidden mb-0">Discover Your Solution</p>
+          <img class="arrow" src="assets/icons/chevron-right-dark.svg" alt="" />
+        </a>
+      </div>
+
+      <div class="card sm-card d-flex flex-column justify-content-between">
+        <div class="text-bg-layer">2</div>
+        <div class="d-flex flex-column gap-3">
+          <div class="icon-bg">
+            <img src="assets/icons/Icon2.svg" alt="" />
+          </div>
+          <h4 class="title">Solution Name</h4>
+          <p class="hidden">
+            Keep your Applications Running like Clockwork. From cross-industry
+            to real estate, we drive growth with tailored IT solutions. 
+          </p>
+        </div>
+        <a href="#" class="discover-link">
+          <p class="hidden mb-0">Discover Your Solution</p>
+          <img class="arrow" src="assets/icons/chevron-right-dark.svg" alt="" />
+        </a>
+      </div>
+    </div>
+    <!----------- MC&PR CARD  ------------->
+    <div class="card-container mc-pr-card gap-3">
+      <div class="card bg-secondary d-flex flex-column gap-3">
+        <div class="d-flex flex-column gap-2">
+          <div class="card-image">
+            <img
+              src="assets/images/177da0fe788fb4e9af2b004eee29fd3ef2e5fcfe.jpg"
+              alt=""
+            />
+          </div>
+          <div class="d-flex justify-content-between align-items-center">
+            <h5 class="badge bg-primary">Featured News</h5>
+            <p class="date">24.01.2024</p>
+          </div>
+        </div>
+        <div class="d-flex flex-column gap-8">
+          <a href="#">
+            <h5 class="title">
+              ejada Wins Informatica’s 2023 Global Channel Partner
+            </h5>
+          </a>
+          <p>ejada Wins Informatica’s 2023 Global Channel Partner</p>
+        </div>
+      </div>
+    </div>
+    <!----------------- project card  --------------->
+    <div class="card-container project-card">
+      <div class="card flex-col gap-4">
+        <a href="#">
+          <div class="card-image">
+            <img src="assets/images/image 1667.png" alt="" />
+          </div>
+          <div class="card-title flex-col gap-4">
+            <h6>Subtitle</h6>
+            <h3>Project Title</h3>
+          </div>
+        </a>
+      </div>
+    </div>
+    <!-- projects accordion cards-------------  -->
+    <div class="card-container projects-accordion-cards d-flex gap-2">
+      <div class="card expanded" onclick="toggleExpandCard(this)">
+        <div class="card-content">
+          <img class="card-bg" src="assets/images/project-bg-img.jpg" alt="" />
+          <div class="content">
+            <div class="logo">logo here</div>
+            <div class="expanded-card-content">
+              <img src="assets/icons/Layer_1.svg" alt="" />
+              <h3>Project name</h3>
+              <p>
+                orem ipsum dolor sit amet, consectetur adipiscing elit.
+                Vestibulum sagittis tempus odio in ultricies. Proin mi arcu,
+                bibendum sed magna quis, sollicitudin aliquet massa. Curabitur
+                at eleifend sapien.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" onclick="toggleExpandCard(this)">
+        <div class="card-content">
+          <img class="card-bg" src="assets/images/project-bg-img.jpg" alt="" />
+          <div class="content">
+            <div class="logo">logo here</div>
+            <div class="expanded-card-content">
+              <img src="assets/icons/Layer_1.svg" alt="" />
+              <h3>Project name</h3>
+              <p>
+                orem ipsum dolor sit amet, consectetur adipiscing elit.
+                Vestibulum sagittis tempus odio in ultricies. Proin mi arcu,
+                bibendum sed magna quis, sollicitudin aliquet massa. Curabitur
+                at eleifend sapien.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- digital transformation card  ----------->
+    <div class="card-container digital-transformation">
+      <div class="card shadow">
+        <div class="shape">
+          <img src="assets/images/Shapes.png" alt="" />
+        </div>
+        <div class="img-section">
+          <div class="img">
+            <img
+              src="assets/images/f4298aa31492b79b5ddf02152933323f3a957006.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="content-container">
+          <div class="top-head d-flex justify-content-between">
+            <div class="d-flex gap-2 text-secondary">
+              01 <img src="assets/icons/arrow-right-green.svg" alt="" />
+            </div>
+            <p>Banking Financial Services & Insurance (BFSI) Solutions</p>
+          </div>
+          <div class="content">
+            <div>
+              <h3 class="sub-head text-secondary">Industries</h3>
+              <h1>Cross-Industry Solutions</h1>
+            </div>
+            <p>Innovative Solutions for Diverse Business Needs </p>
+            <a href="#" class="btn btn-secondary text-primary"
+              >Discover Your Solution</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- our capabilities card -------------->
+    <div class="card-container our-capabilities">
+      <div class="card flex-col gap-16">
+        <div class="icon">
+          <img src="assets/icons/Icon11.svg" alt="" />
+        </div>
+        <div class="text">
+          <h5 class="title">
+            Oracle eBusiness Suite & Fusion Cloud Applications 
+          </h5>
+          <p>
+            We provide high-quality, cost-effective implementation services for
+            Oracle EBS Products and Oracle Fusion Cloud applications across
+            various industries and business tracks. ejada also provides Oracle
+            EBS upgrades for apps and DB, and cloud transformation from EBS to
+            Fusion applications. 
+          </p>
+        </div>
+        <a class="flex-row" href="#"
+          >Oracle Fusion <img src="assets/icons/external-link-blue.svg" alt=""
+        /></a>
+      </div>
+    </div>
+
+    <!-- discover the impact on your business card -------------->
+    <div class="card-container discover-impact">
+      <div class="card">
+        <img src="assets/icons/001-data-integration.svg" alt="" />
+        <div class="text flex-col gap-8">
+          <h3 class="title">Increased Efficiency & Productivity</h3>
+          <p>
+            Streamline workflows, automate tasks, and empower your employees to
+            achieve more.
+          </p>
+        </div>
+        <a href="#" class="btn btn-outline-primary demo"> Request a Demo</a>
+      </div>
+      <!-- no CTA card  -->
+      <div class="card cta-no">
+        <img src="assets/icons/001-data-integration.svg" alt="" />
+        <div class="text flex-col gap-8">
+          <h3 class="title">Increased Efficiency & Productivity</h3>
+          <p>
+            Streamline workflows, automate tasks, and empower your employees to
+            achieve more.
+          </p>
+        </div>
+        <a href="#" class="btn btn-outline-primary"> Request a Demo</a>
+      </div>
+    </div>
+
+    <!--  Get startes/ subscribe cards -->
+    <div class="card-container subscribe-card">
+      <div class="content d-flex flex-column">
+        <div class="icon">
+          <img src="assets/icons/zap-fast.svg" alt="" />
+        </div>
+        <h1 class="title">Innovation Spotlight</h1>
+        <p class="fw-light">
+          Subscribe to our newsletter to get inside insights into our innovation
+        </p>
+        <div class="d-flex gap-2 align-items-start">
+          <div class="d-flex flex-column">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Enter your email"
+            />
+            <p class="input-note">
+              We care about your data in our privacy policy.
+            </p>
+          </div>
+          <button class="btn btn-primary">Subscribe</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-container subscribe-card">
+      <div class="content d-flex flex-column">
+        <div class="icon">
+          <img src="assets/icons/zap-fast.svg" alt="" />
+        </div>
+        <h1 class="title">Ready to Transform Your IT Infrastructure?</h1>
+        <p class="fw-light">
+          Partner with us to enhance your IT ecosystem with secure, scalable,
+          and future-ready solutions.
+        </p>
+        <a class="btn btn-light" href="#">Get Started Today</a>
+      </div>
+    </div>
+
+    <!------- social media cards----------------------------- -->
+    <div class="card-container social-media-container">
+      <div class="card bg-secondary tall">
+        <div class="card-img">
+          <img src="assets/images/Image1.png" alt="" />
+        </div>
+        <div class="content">
+          <a href="#">
+            <p>
+              Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do
+              eiusmod.Lorem ipsum dolor sit amet, consec tetur tetur adipiscing
+              elit, sed do eiusmod.Lorem ipsum dolor sit amet, consec tetur
+              tetur adipiscing elit, sed do eiusmod.Lorem ipsum dolor sit amet,
+              consec tetur tetur adipiscing elit, sed do eiusmodadipiscing elit,
+              sed do eiusmod.Lorem ipsum dolor sit amet, consec tetur tetur
+              adipiscing elit, sed do eiusmod.
+            </p></a
+          >
+
+          <div class="d-flex justify-content-between">
+            <h6>2 weeks ago</h6>
+            <div class="social-icon">
+              <img
+                src="assets/icons/square-facebook-brands-solid2.svg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="like">
+          <img src="assets/icons/heart.svg" alt="" />
+        </div>
+      </div>
+
+      <div class="card bg-secondary short">
+        <div class="card-img">
+          <img src="assets/images/image2.jpg" alt="" />
+        </div>
+        <div class="content">
+          <a href="#">
+            <p>
+              Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do
+              eiusmod.Lorem ipsum dolor sit amet, consec tetur tetur adipiscing
+              elit, sed do eiusmod.Lorem ipsum dolor sit amet, consec tetur
+              tetur adipiscing elit, sed do eiusmod.Lorem ipsum dolor sit amet,
+              consec tetur tetur adipiscing elit, sed do eiusmodadipiscing elit,
+              sed do eiusmod.Lorem ipsum dolor sit amet, consec tetur tetur
+              adipiscing elit, sed do eiusmod.
+            </p>
+          </a>
+
+          <div class="d-flex justify-content-between">
+            <h6>2 weeks ago</h6>
+            <div class="social-icon">
+              <img
+                src="assets/icons/square-facebook-brands-solid2.svg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="like">
+          <img src="assets/icons/heart.svg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- events cards -------------------------  -->
+    <div class="card-container events-cards">
+      <a href="#">
+        <div class="card d-flex flex-row align-items-center">
+          <div class="card-img">
+            <img src="assets/images/event-Image.png" alt="" />
+          </div>
+          <div class="content">
+            <h6 class="badge info-tag">Recent</h6>
+            <h6 class="date mb-0">August 20, 2022</h6>
+            <h6 class="title mb-0">Mobile App & Web Portal Development</h6>
+            <p>
+              We build user-friendly mobile apps (native and hybrid) and web
+              portals that provide seamless, on-the-go access to services,
+              increasing engagement across platforms.
+            </p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- explore cards-------------  -->
+    <div class="card-container explore-cards">
+      <div class="card d-flex flex-column gap-2">
+        <div class="card-img">
+          <img
+            src="assets/images/4d56c53949b1270d9d0127d81f6a3d80f5a00137.jpg"
+            alt=""
+          />
+        </div>
+        <div class="content">
+          <h6 class="date my-2 text-light">24.01.2024</h6>
+          <h3 class="title mb-2 text-light">
+            Navigate Digital Transformation: Strategies for Success in the IT
+            Services Industry
+          </h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur. Velit nibh urna nec mattis
+            in bibendum. Vestibulum et libero tempus semper viverra interdum
+            euismod.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- -------------------------------------------  -->
+    <!-- -------------------------------------------  -->
+    <!-- bootstrap js file -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- main js file -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
